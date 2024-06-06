@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JunusErgin/fast-ui/style.css">
+</head>
+
+<body>
+    <header>Number guessing game</header>
+    <div class="container">
+        <h1 id="headline">Bitte rate die Zahl!</h1>
+        <h2 id="displayTries">Versuche: 0</h2>
+        <form onsubmit="guessTheNumber(); return false;">
+            <input id="myNumber" type="number" required placeholder="Bitte Zahl eingeben...">
+            <button>Raten!</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</html>
